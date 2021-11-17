@@ -1,214 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hot Gadgets</title>
     <!-- css includes -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- header start here  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                  <img src="images/logo.png" alt="logo">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <div class="container caro">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row align-items-center">
+              <div class="col-md-7">
+                <h2>Macbook Pro</h2>
+                <p class="lh-lg my-3">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Assumenda, corporis amet! Hic nemo ratione consequatur
+                  officiis accusamus! Est dolorem aspernatur tempore, delectus
+                  adipisci deserunt ipsum aut officiis enim.
+                </p>
+                <button class="buy-now-button">
+                  Buy Now <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+              <div class="col-md-5">
+                <img
+                  src="./images/banner-products/product-1.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row align-items-center">
+              <div class="col-md-7">
+                <h2>Earbuds</h2>
+                <p class="lh-lg my-3">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Assumenda, corporis amet! Hic nemo ratione consequatur
+                  officiis accusamus! Est dolorem aspernatur tempore, delectus
+                  adipisci deserunt ipsum aut officiis enim.
+                </p>
+                <button class="buy-now-button">
+                  Buy Now <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+              <div class="col-md-5">
+                <img
+                  src="./images/banner-products/slider-1.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row align-items-center">
+              <div class="col-md-7">
+                <h2>Sound System</h2>
+                <p class="lh-lg my-3">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Assumenda, corporis amet! Hic nemo ratione consequatur
+                  officiis accusamus! Est dolorem aspernatur tempore, delectus
+                  adipisci deserunt ipsum aut officiis enim.
+                </p>
+                <button class="buy-now-button">
+                  Buy Now <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+              <div class="col-md-5">
+                <img
+                  src="./images/banner-products/slider-3.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3>Smartphone</h3>
+        <a class="nav-link see-all-color fs-5" href="#">See All</a>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img
+              src="./images/phone/phone-1.png"
+              class="card-img-top w-75 my-3 mx-auto"
+              alt="..."
+            />
+            <div class="card-body">
+              <h3 class="card-title">Poco X3</h3>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <h3 class="py-2">$699</h3>
+              <button class="buy-now-button text-uppercase">
+                Buy Now <i class="fas fa-arrow-right"></i>
               </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Product</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link">Contact Us</a>
-                  </li>
-                </ul>
-              </div>
             </div>
-          </nav>
-
-         <div class="container caro">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                      <div class="row align-items-center">
-                          <div class="col-md-7">
-                              <h2>Macbook Pro</h2>
-                              <p class="lh-lg my-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, corporis amet! Hic nemo ratione consequatur officiis accusamus! Est dolorem aspernatur tempore, delectus adipisci deserunt ipsum aut officiis enim.</p>
-                              <button class="buy-now-button">Buy Now <i class="fas fa-arrow-right"></i></button>
-                          </div>
-                          <div class="col-md-5">
-                              <img src="./images/banner-products/product-1.png" class="d-block w-100" alt="...">
-                            </div>
-                      </div>
-                    
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row align-items-center">
-                        <div class="col-md-7">
-                            <h2>Earbuds</h2>
-                            <p class="lh-lg my-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, corporis amet! Hic nemo ratione consequatur officiis accusamus! Est dolorem aspernatur tempore, delectus adipisci deserunt ipsum aut officiis enim.</p>
-                            <button class="buy-now-button">Buy Now <i class="fas fa-arrow-right"></i></button>
-                        </div>
-                        <div class="col-md-5">
-                            <img src="./images/banner-products/slider-1.png" class="d-block w-100" alt="...">
-                          </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row align-items-center">
-                        <div class="col-md-7">
-                            <h2>Sound System</h2>
-                            <p class="lh-lg my-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, corporis amet! Hic nemo ratione consequatur officiis accusamus! Est dolorem aspernatur tempore, delectus adipisci deserunt ipsum aut officiis enim.</p>
-                            <button class="buy-now-button">Buy Now <i class="fas fa-arrow-right"></i></button>
-                        </div>
-                        <div class="col-md-5">
-                            <img src="./images/banner-products/slider-3.png" class="d-block w-100" alt="...">
-                          </div>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-         </div>
-
-    <!-- header end here  -->
-
-
-
-      <div class="container mt-5">
-        <div class="d-flex justify-content-between align-items-center mb-3">
-            <h3>Smartphone</h3>
-            <a class="nav-link text-warning fs-5" href="#">See All</a>
+          </div>
         </div>
-
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-          <div class="col">
-            <div class="card h-100 text-center">
-              <img src="./images/phone/phone-1.png" class="card-img-top w-75 my-3 mx-auto" alt="...">
-              <div class="card-body">
-                <h3 class="card-title">Poco X3</h3>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <h3 class="py-2">$699</h3>
-                <button class="buy-now-button text-uppercase">Buy Now <i class="fas fa-arrow-right"></i></button>
-              </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img
+              src="images/phone/phone-2.png"
+              class="card-img-top w-75 my-3 mx-auto"
+              alt="..."
+            />
+            <div class="card-body">
+              <h3 class="card-title">iPhone 11 Pro</h3>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <h3 class="py-2">$999</h3>
+              <button class="buy-now-button text-uppercase">
+                Buy Now <i class="fas fa-arrow-right"></i>
+              </button>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100 text-center">
-              <img src="images/phone/phone-2.png" class="card-img-top w-75 my-3 mx-auto" alt="...">
-              <div class="card-body">
-                <h3 class="card-title">iPhone 11 Pro</h3>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <h3 class="py-2">$999</h3>
-                <button class="buy-now-button text-uppercase">Buy Now <i class="fas fa-arrow-right"></i></button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 text-center">
-              <img src="images/phone/phone-3.png" class="card-img-top w-75 my-3 mx-auto" alt="...">
-              <div class="card-body">
-                <h3 class="card-title">Galaxy Note10+</h3>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <h3 class="py-2">$799</h3>
-                <button class="buy-now-button text-uppercase">Buy Now <i class="fas fa-arrow-right"></i></button>
-              </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img
+              src="images/phone/phone-3.png"
+              class="card-img-top w-75 my-3 mx-auto"
+              alt="..."
+            />
+            <div class="card-body">
+              <h3 class="card-title">Galaxy Note10+</h3>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <h3 class="py-2">$799</h3>
+              <button class="buy-now-button text-uppercase">
+                Buy Now <i class="fas fa-arrow-right"></i>
+              </button>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
+    <div class="container mt-5">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3>Laptop</h3>
+        <a class="nav-link see-all-color fs-5" href="#">See All</a>
+      </div>
 
-
-
-
-      <div class="container mt-5">
-        <div class="d-flex justify-content-between align-items-center mb-3">
-            <h3>Laptop</h3>
-            <a class="nav-link text-warning fs-5" href="#">See All</a>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img
+              src="./images/laptop/product-1.png"
+              class="card-img-top w-75 my-3 mx-auto"
+              alt="..."
+            />
+            <div class="card-body">
+              <h3 class="card-title">Asus Vivobook</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+                quos.
+              </p>
+              <h3 class="py-2">$999</h3>
+              <button class="buy-now-button text-uppercase">
+                Buy Now <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
         </div>
-
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-          <div class="col">
-            <div class="card h-100 text-center">
-              <img src="./images/laptop/product-1.png" class="card-img-top w-75 my-3 mx-auto" alt="...">
-              <div class="card-body">
-                <h3 class="card-title">Asus Vivobook</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quos.</p>
-                <h3 class="py-2">$999</h3>
-                <button class="buy-now-button text-uppercase">Buy Now <i class="fas fa-arrow-right"></i></button>
-              </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img
+              src="images/laptop/product-2.png"
+              class="card-img-top w-75 my-3 mx-auto"
+              alt="..."
+            />
+            <div class="card-body">
+              <h3 class="card-title">Razer Blade</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae, dolorum!
+              </p>
+              <h3 class="py-2">$2999</h3>
+              <button class="buy-now-button text-uppercase">
+                Buy Now <i class="fas fa-arrow-right"></i>
+              </button>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100 text-center">
-              <img src="images/laptop/product-2.png" class="card-img-top w-75 my-3 mx-auto" alt="...">
-              <div class="card-body">
-                <h3 class="card-title">Razer Blade</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, dolorum!</p>
-                <h3 class="py-2">$2999</h3>
-                <button class="buy-now-button text-uppercase">Buy Now <i class="fas fa-arrow-right"></i></button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 text-center">
-              <img src="images/laptop/product-3.png" class="card-img-top w-75 my-3 mx-auto" alt="...">
-              <div class="card-body">
-                <h3 class="card-title">Mi Notebook</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, dolorem.</p>
-                <h3 class="py-2">$999</h3>
-                <button class="buy-now-button text-uppercase">Buy Now <i class="fas fa-arrow-right"></i></button>
-              </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img
+              src="images/laptop/product-3.png"
+              class="card-img-top w-75 my-3 mx-auto"
+              alt="..."
+            />
+            <div class="card-body">
+              <h3 class="card-title">Mi Notebook</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque, dolorem.
+              </p>
+              <h3 class="py-2">$999</h3>
+              <button class="buy-now-button text-uppercase">
+                Buy Now <i class="fas fa-arrow-right"></i>
+              </button>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-
-
-
-
-
-
-
-
-      <div class="container my-5">
-        <h3 class="pt-5 text-center">Categories</h3>
+    <div class="container my-5">
+      <h3 class="pt-5 text-center">Categories</h3>
+      <div class="cat mb-5"></div>
+      <div class="row align-items-center justify-content-between g-4">
+        <div class="col-md-6">
+          <div class="d-flex align-items-center justify-content-center">
+            <div>
+              <img
+                class="box-shadow rounded p-5 m-3"
+                src="images/Categories/bag.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="box-shadow rounded p-5 m-3"
+                src="images/Categories/perfume.png"
+                alt=""
+              />
+              <img
+                class="box-shadow rounded p-5 m-3"
+                src="images/Categories/shoe.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img
+            class="img-fluid"
+            src="./images/Categories/pale-order.png"
+            alt=""
+          />
+        </div>
       </div>
-
-
-
-
-
+    </div>
 
     <!-- javascript includes -->
     <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
