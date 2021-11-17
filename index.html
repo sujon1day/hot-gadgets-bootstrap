@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hot Gadgets</title>
     <!-- css includes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <!-- header start here  -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
             <div class="container">
               <a class="navbar-brand" href="#">
                   <img src="images/logo.png" alt="logo">
@@ -38,7 +40,7 @@
             </div>
           </nav>
 
-         <div class="container">
+         <div class="container caro">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -47,11 +49,11 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                      <div class="row">
+                      <div class="row align-items-center">
                           <div class="col-md-7">
                               <h2>Macbook Pro</h2>
-                              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ut non accusantium officiis!</p>
-                              <button class="buy-now-button">Buy Now</button>
+                              <p class="lh-lg my-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, corporis amet! Hic nemo ratione consequatur officiis accusamus! Est dolorem aspernatur tempore, delectus adipisci deserunt ipsum aut officiis enim.</p>
+                              <button class="buy-now-button">Buy Now <i class="fas fa-arrow-right"></i></button>
                           </div>
                           <div class="col-md-5">
                               <img src="./images/banner-products/product-1.png" class="d-block w-100" alt="...">
@@ -60,11 +62,11 @@
                     
                   </div>
                   <div class="carousel-item">
-                    <div class="row">
+                    <div class="row align-items-center">
                         <div class="col-md-7">
                             <h2>Earbuds</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ut non accusantium officiis!</p>
-                            <button class="buy-now-button">Buy Now</button>
+                            <p class="lh-lg my-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, corporis amet! Hic nemo ratione consequatur officiis accusamus! Est dolorem aspernatur tempore, delectus adipisci deserunt ipsum aut officiis enim.</p>
+                            <button class="buy-now-button">Buy Now <i class="fas fa-arrow-right"></i></button>
                         </div>
                         <div class="col-md-5">
                             <img src="./images/banner-products/slider-1.png" class="d-block w-100" alt="...">
@@ -72,11 +74,11 @@
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="row">
+                    <div class="row align-items-center">
                         <div class="col-md-7">
                             <h2>Sound System</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ut non accusantium officiis!</p>
-                            <button class="buy-now-button">Buy Now</button>
+                            <p class="lh-lg my-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, corporis amet! Hic nemo ratione consequatur officiis accusamus! Est dolorem aspernatur tempore, delectus adipisci deserunt ipsum aut officiis enim.</p>
+                            <button class="buy-now-button">Buy Now <i class="fas fa-arrow-right"></i></button>
                         </div>
                         <div class="col-md-5">
                             <img src="./images/banner-products/slider-3.png" class="d-block w-100" alt="...">
@@ -94,7 +96,113 @@
                 </button>
               </div>
          </div>
-    </header>
+
+    <!-- header end here  -->
+
+
+
+      <div class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h3>Smartphone</h3>
+            <a class="nav-link text-warning fs-5" href="#">See All</a>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card h-100 text-center">
+              <img src="./images/phone/phone-1.png" class="card-img-top w-75 my-3 mx-auto" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">Poco X3</h3>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h3 class="py-2">$699</h3>
+                <button class="buy-now-button text-uppercase">Buy Now <i class="fas fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 text-center">
+              <img src="images/phone/phone-2.png" class="card-img-top w-75 my-3 mx-auto" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">iPhone 11 Pro</h3>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h3 class="py-2">$999</h3>
+                <button class="buy-now-button text-uppercase">Buy Now <i class="fas fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 text-center">
+              <img src="images/phone/phone-3.png" class="card-img-top w-75 my-3 mx-auto" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">Galaxy Note10+</h3>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h3 class="py-2">$799</h3>
+                <button class="buy-now-button text-uppercase">Buy Now <i class="fas fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h3>Laptop</h3>
+            <a class="nav-link text-warning fs-5" href="#">See All</a>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card h-100 text-center">
+              <img src="./images/laptop/product-1.png" class="card-img-top w-75 my-3 mx-auto" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">Asus Vivobook</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quos.</p>
+                <h3 class="py-2">$999</h3>
+                <button class="buy-now-button text-uppercase">Buy Now <i class="fas fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 text-center">
+              <img src="images/laptop/product-2.png" class="card-img-top w-75 my-3 mx-auto" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">Razer Blade</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, dolorum!</p>
+                <h3 class="py-2">$2999</h3>
+                <button class="buy-now-button text-uppercase">Buy Now <i class="fas fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 text-center">
+              <img src="images/laptop/product-3.png" class="card-img-top w-75 my-3 mx-auto" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">Mi Notebook</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, dolorem.</p>
+                <h3 class="py-2">$999</h3>
+                <button class="buy-now-button text-uppercase">Buy Now <i class="fas fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="container my-5">
+        <h3 class="pt-5 text-center">Categories</h3>
+      </div>
+
 
 
 
